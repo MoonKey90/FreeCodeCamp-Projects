@@ -1,0 +1,9 @@
+function telephoneCheck(str) {
+ /* str.split(/\s|-/).join();*/
+
+  const regex = /^(1\s?)?((\(\d{3}\))|(\d{3}))(\s?-?)(\d{3})(\s?-?)(\d{4}$)/g;
+  return regex.test(str);
+   
+} 
+
+telephoneCheck("555-555-5555");
